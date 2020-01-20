@@ -11,12 +11,12 @@ import testUtility
 player_names = ["Annie", "*Ben"]
 
 # number of curses and victory cards
-nV, nC = testUtility.initnCnV(player_names, 0)
+nV, nC = testUtility.initnCnV(player_names, 5)
 
 # Define box
 box = testUtility.getBoxs(nV)
 supply_order = testUtility.getSupplyOrder()
-supply = testUtility.getSupply(box, player_names, nV, nC, num=0)
+supply = testUtility.getSupply(box, player_names, nV, nC, num=10)
 
 # initialize the trash
 trash = []

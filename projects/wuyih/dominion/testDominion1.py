@@ -8,15 +8,15 @@ import Dominion
 import testUtility
 
 # Get player names
-player_names = ["Annie", "*Ben"]
+player_names = ["Annie", "*Mike", "*Jack", "*Lisa"]
 
 # number of curses and victory cards
-nV, nC = testUtility.initnCnV(player_names, -10)
+nV, nC = testUtility.initnCnV(player_names, 20)
 
 # Define box
 box = testUtility.getBoxs(nV)
 supply_order = testUtility.getSupplyOrder()
-supply = testUtility.getSupply(box, player_names, nV, nC, num=0)
+supply = testUtility.getSupply(box, player_names, nV, nC, num=30)
 
 # initialize the trash
 trash = []
